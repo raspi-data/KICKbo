@@ -1,0 +1,15 @@
+backend:
+  name: git-gateway
+
+media_folder: static/assets
+public_folder: /assets
+
+collections:
+  - name: 'content' # Your collection name
+    label: 'Content'
+    folder: 'content'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
