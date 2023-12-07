@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Silkscreen', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        /* Styled Casino Box */
+        .casino-box {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(to right, #ffcc00, #ff6666); /* Casino-style gradient colors */
+            border-radius: 15px;
+            margin: 20px auto;
+            max-width: 600px; /* Adjust the width as needed */
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+            margin-left: 20px; /* Added margin on mobile */
+            margin-right: 20px; /* Added margin on mobile */
+            border: 1px solid #fff; /* White border */
+        }
+
+        .casino-box:hover {
+            transform: scale(1.05);
+        }
+
+        .casino-box img {
+            max-width: 100px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .casino-box p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #111111; /* dark text color */
+            font-family: 'Montserrat', sans-serif; /* Montserrat font */
+        }
+
+        .casino-box button {
+            padding: 12px 24px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            font-family: 'Silkscreen', sans-serif; /* Silkscreen font */
+        }
+
+        .casino-box button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+
+        /* Box Style */
+        .box {
+            background-color: #282828;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            margin-left: 20px; /* Added margin on mobile */
+            margin-right: 20px; /* Added margin on mobile */
+        }
+
+        .footer-section {
+            background-color: #1f1f1f;
+            padding: 10px; /* Smaller padding */
+            text-align: center;
+            margin-top: 10px; /* Smaller top margin */
+        }
+
+        .footer-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-columns {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap; /* Enable wrapping */
+            margin-bottom: 10px; /* Smaller bottom margin */
+        }
+
+        .footer-column {
+            width: 48%; /* Adjust the width as needed */
+            margin-bottom: 10px; /* Added margin for better spacing */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+            justify-content: center; /* Center content vertically */
+        }
+
+        .footer-column img {
+            max-width: 100%; /* Ensure the image doesn't overflow its container */
+        }
+
+        .copyright-text {
+            font-size: 14px;
+        }
+
+        /* Media Query for Mobile */
+        @media screen and (max-width: 600px) {
+            .footer-columns,
+            .box,
+            .casino-box {
+                margin-left: 20px; /* Adjusted margin for mobile */
+                margin-right: 20px; /* Adjusted margin for mobile */
+            }
+
+            .footer-column {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="Logo-Kickbonuses.svg" alt="Kickbonuses Logo">
+    </header>
+
+    <div class="main-content">
+        <!-- Styled Casino Box -->
+        <div class="casino-box" onclick="window.location.href='your-bonus-link.html'">
+            <img src="6318bfd6e2a1691b9b74b8a0_wolfy-casino-logo-big.png" alt="Casino Logo">
+            <h2>Exclusive Bonus Offer!</h2>
+            <p>Get a 100% bonus on your first deposit. Don't miss out on this exciting opportunity!</p>
+            <button>Get Bonus</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <!-- Two Columns -->
+            <div class="footer-columns">
+                <!-- Column 1 -->
+                <div class="footer-column">
+                    <div class="mega-footer-left-wrapper">
+                        <h5>GAMBLE AWARE</h5>
+                        <p class="mega-footer-paragraph-2">Most people gamble for fun and enjoyment. However, some people
+                            think of gambling as a way to make money, spend more than they can afford, or use gambling to
+                            distract themselves from everyday problems. Following these tips can help you to gamble more
+                            safely.<br><br>1. Don't think of gambling as a way to make money<br>2. Only gamble with money
+                            you can afford to lose<br>3. Set a money limit in advance<br>4. Set a time limit in
+                            advance<br>5. Never chase your lossesTo find further advice, help and support visit:
+                            https://www.begambleaware.org/<br></p>
+                        <h5>DISCLAIMER</h5>
+                        <p class="mega-footer-paragraph-2 mobile">Kickbonus.com is not responsible for incorrect
+                            information on bonuses, offers, or promotions listed on the website. Kickbonus.com recommends
+                            that the player reviews all the terms and conditions of all bonuses listed on the Casino's
+                            website. </p>
+                    </div>
+                </div>
+                <!-- Column 2 -->
+                <div class="footer-column">
+                    <div class="logo-footer"><img
+                            src="Logo-Kickbonuses.svg"
+                            loading="lazy" width="60%" alt="Kickbonuses"></div>
+                </div>
+            </div>
+            <!-- Copyright Text -->
+            <div class="copyright-text">
+                <p>&copy; 2023 - 2024 Kickbonus.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
