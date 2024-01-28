@@ -13,6 +13,7 @@
             font-family: 'Silkscreen', sans-serif;
             background-color: #121212;
             color: #ffffff;
+            overflow-x: hidden; /* Hide horizontal scrollbar */
         }
 
         header {
@@ -27,9 +28,10 @@
 
         .main-content {
             display: flex;
+            flex-wrap: wrap; /* Enable wrapping */
             justify-content: center;
-            align-items: center;
-            height: 80vh;
+            gap: 25px; /* Maximum space between casino boxes */
+            overflow: hidden; /* Hide any content that overflows */
         }
 
         /* Styled Casino Box */
@@ -38,13 +40,11 @@
             padding: 40px;
             background: linear-gradient(to right, #ffcc00, #ff6666); /* Casino-style gradient colors */
             border-radius: 15px;
-            margin: 20px auto;
-            max-width: 600px; /* Adjust the width as needed */
+            max-width: calc(50% - 25px); /* Adjusted width for 2 boxes per row with maximum 25px space between */
             cursor: pointer;
             transition: transform 0.2s ease-in-out;
-            margin-left: 20px; /* Added margin on mobile */
-            margin-right: 20px; /* Added margin on mobile */
             border: 1px solid #fff; /* White border */
+            margin-bottom: 25px; /* Space below each casino box */
         }
 
         .casino-box:hover {
@@ -80,23 +80,15 @@
             background-color: #45a049; /* Darker green on hover */
         }
 
-        /* Box Style */
-        .box {
-            background-color: #282828;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            max-width: 400px;
-            width: 100%;
-            margin-left: 20px; /* Added margin on mobile */
-            margin-right: 20px; /* Added margin on mobile */
-        }
-
+        /* Footer Styles */
         .footer-section {
             background-color: #1f1f1f;
             padding: 10px; /* Smaller padding */
             text-align: center;
             margin-top: 10px; /* Smaller top margin */
+            width: 100%;
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+            overflow: hidden; /* Hide any content that overflows */
         }
 
         .footer-container {
@@ -130,6 +122,11 @@
 
         /* Media Query for Mobile */
         @media screen and (max-width: 600px) {
+            .casino-box {
+                max-width: calc(100% - 40px); /* Adjusted width for 1 box per row */
+                margin: 20px auto; /* Center the boxes horizontally */
+            }
+
             .footer-columns,
             .box,
             .casino-box {
@@ -148,14 +145,54 @@
 <body>
 
     <header>
-        <img src="Logo-Kickbonuses.svg" alt="Kickbonuses Logo">
+        <img src="Logo-Kickbonuses.svg" alt="Kickbonuses Logo" style="margin-bottom: 100px;">
     </header>
 
-    <div class="main-content">
-        <!-- Styled Casino Box -->
-        <div class="casino-box" onclick="window.location.href='your-bonus-link.html'">
+    <div class="main-content" style="margin-left: 50px; margin-right: 50px;">
+        <!-- Styled Casino Box 1 -->
+        <div class="casino-box" onclick="window.location.href='your-bonus-link.html'" style="background: linear-gradient(to right, #ffcc00, #ff6666);">
             <img src="6318bfd6e2a1691b9b74b8a0_wolfy-casino-logo-big.png" alt="Casino Logo">
-            <h2>Exclusive Bonus Offer!</h2>
+            <h2>Monster Exclusive Bonus Offer!</h2>
+            <p>Get a 100% bonus on your first deposit. Don't miss out on this exciting opportunity!</p>
+            <button>Get Bonus</button>
+        </div>
+
+        <!-- Styled Casino Box 2 -->
+        <div class="casino-box" onclick="window.location.href='your-bonus-link.html'" style="background: linear-gradient(to right, #00ff22, #6e66ff);">
+            <img src="6318bfd6e2a1691b9b74b8a0_wolfy-casino-logo-big.png" alt="Casino Logo">
+            <h2>Bet O bet Casino  Bonus Offer!</h2>
+            <p>Get a 100% bonus on your first deposit. Don't miss out on this exciting opportunity!</p>
+            <button>Get Bonus</button>
+        </div>
+
+        <!-- Styled Casino Box 3 -->
+        <div class="casino-box" onclick="window.location.href='your-bonus-link.html'" style="background: linear-gradient(to right, #06cff3, #f45524);">
+            <img src="6318bfd6e2a1691b9b74b8a0_wolfy-casino-logo-big.png" alt="Casino Logo">
+            <h2>Lucky Bandit Casino Bonus!</h2>
+            <p>Get a 100% bonus on your first deposit. Don't miss out on this exciting opportunity!</p>
+            <button>Get Bonus</button>
+        </div>
+
+        <!-- Styled Casino Box 4 -->
+        <div class="casino-box" onclick="window.location.href='your-bonus-link.html'" style="background: linear-gradient(to right, #ff0073, #a704d9);">
+            <img src="6318bfd6e2a1691b9b74b8a0_wolfy-casino-logo-big.png" alt="Casino Logo">
+            <h2>Mr Vegas Casino Offer!</h2>
+            <p>Get a 100% bonus on your first deposit. Don't miss out on this exciting opportunity!</p>
+            <button>Get Bonus</button>
+        </div>
+
+        <!-- Styled Casino Box 5 -->
+        <div class="casino-box" onclick="window.location.href='your-bonus-link.html'" style="background: linear-gradient(to right, #00ff22, #035e77);">
+            <img src="6318bfd6e2a1691b9b74b8a0_wolfy-casino-logo-big.png" alt="Casino Logo">
+            <h2>Videoslots Casino Bonus Offer!</h2>
+            <p>Get a 100% bonus on your first deposit. Don't miss out on this exciting opportunity!</p>
+            <button>Get Bonus</button>
+        </div>
+
+        <!-- Styled Casino Box 6 -->
+        <div class="casino-box" onclick="window.location.href='your-bonus-link.html'" style="background: linear-gradient(to right, #001aff, #00eeff);">
+            <img src="6318bfd6e2a1691b9b74b8a0_wolfy-casino-logo-big.png" alt="Casino Logo">
+            <h2>Prontobet Casino Bonus Offer!</h2>
             <p>Get a 100% bonus on your first deposit. Don't miss out on this exciting opportunity!</p>
             <button>Get Bonus</button>
         </div>
